@@ -58,8 +58,7 @@ ul,
 ol,
 li,
 blockquote,
-fieldset,
-input {
+fieldset {
   margin: 0;
   padding: 0;
 }
@@ -205,8 +204,6 @@ ol {
   line-height: 100%;
   letter-spacing: 0%;
   width: 225px;
-  padding-top: 1px;
-  padding-bottom: 1px;
 }
 
 .search-form__textfield::placeholder {
