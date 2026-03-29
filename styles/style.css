@@ -32,8 +32,9 @@ html {
 
 .search-form {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: end;
 }
 
 .content__list-container {
@@ -101,13 +102,6 @@ ol {
   object-fit: cover;
 }
 
-.search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-}
-
 .search-form__fieldset {
   height: 54px;
   border: none;
@@ -142,7 +136,6 @@ ol {
   margin: 5px 0;
   font-family: Fira Sans Condensed;
   font-weight: 400;
-  font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
 }
