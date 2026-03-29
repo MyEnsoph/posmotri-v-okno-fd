@@ -22,7 +22,6 @@ html {
 }
 
 .content {
-  background-color: brown;
   display: flex;
   justify-content: flex-start;
   gap: 30px;
@@ -111,8 +110,8 @@ ol {
 }
 
 .search-form__fieldset {
-  width: 225px;
   height: 54px;
+  border: none;
 }
 
 .content__list {
@@ -195,18 +194,17 @@ ol {
   border-bottom: 1px solid #fff;
   color: #fff;
   font-size: 18px;
-  padding: 5px 0;
-  width: 225px;
   appearance: none;
 }
 
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.7a);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  justify-content: flex-start;
+  column-gap: 15px;
 }
 
 .search-form__label {
@@ -284,7 +282,8 @@ ol {
 }
 
 .search-form__submit-button {
-  padding: 10px 50px;
+  width: 194px;
+  height: 34px;
   align-self: flex-end;
 }
 
