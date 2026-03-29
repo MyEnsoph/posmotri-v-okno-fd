@@ -58,7 +58,8 @@ ul,
 ol,
 li,
 blockquote,
-fieldset {
+fieldset,
+input {
   margin: 0;
   padding: 0;
 }
@@ -92,7 +93,6 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  /* margin-bottom: 30px; */
   position: relative;
 }
 
@@ -140,8 +140,12 @@ ol {
 
 .search-form__fieldset-title {
   font-size: 18px;
-  font-weight: 700;
   margin-bottom: 5px;
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .title {
@@ -194,7 +198,15 @@ ol {
   border-bottom: 1px solid #fff;
   color: #fff;
   font-size: 18px;
+  font-family: Fira Sans Condensed;
   appearance: none;
+  font-weight: 400;
+  font-style: inherit;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 225px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .search-form__textfield::placeholder {
