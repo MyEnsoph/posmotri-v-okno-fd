@@ -44,10 +44,7 @@ fieldset {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
-  margin-left: 390px;
-  margin-right: 360px;
-  margin-top: 333px;
-  margin-bottom: 333px;
+  margin: 390px 333px;
 }
 
 .search-form {
@@ -58,8 +55,7 @@ fieldset {
 }
 
 .content__list-container {
-  height: 600px;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: relative;
   max-height: 298px;
 }
@@ -68,7 +64,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: 30px;
+  gap: 26px;
 }
 
 /* Кастомный скроллбар */
@@ -85,11 +81,12 @@ fieldset {
 }
 
 .result {
-  max-width: 711px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 16px;
+  /* margin-top: 78px;
+  padding-top: 0; */
 }
 
 .result__video-container {
@@ -103,10 +100,15 @@ fieldset {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  margin-top: 78px;
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: none;
+  gap: 5px;
 }
 
 .content__list {
@@ -118,7 +120,7 @@ fieldset {
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .content__video-card-thumbnail {
@@ -129,29 +131,28 @@ fieldset {
   flex-shrink: 0;
 }
 
-.content__video-card-description-container {
-  flex-grow: 1;
+.content__video-card-description {
+  width: 196px;
 }
 
 .search-form__fieldset-title {
   font-size: 18px;
-  margin: 5px 0;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0;
 }
 
-.title {
+.title,
+.content__accent {
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 70px;
   text-transform: uppercase;
 }
 
 .content__accent {
-  font-family: Oswald, sans-serif;
   color: #545050;
 }
 
@@ -169,8 +170,6 @@ fieldset {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 192px;
-  margin-bottom: 6px;
   text-transform: uppercase;
 }
 
@@ -202,6 +201,7 @@ fieldset {
   letter-spacing: 0;
   width: 225px;
   padding: 2px 1px;
+  margin-top: 4px;
 }
 
 .search-form__textfield::placeholder {
