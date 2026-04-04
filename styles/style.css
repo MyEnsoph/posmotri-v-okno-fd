@@ -134,6 +134,10 @@ fieldset {
 
 .content__video-card-description {
   width: 196px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .search-form__fieldset-title {
@@ -206,6 +210,11 @@ fieldset {
   margin-top: 3px;
 }
 
+.search-form__textfield:hover {
+  text-decoration: none;
+  cursor: text;
+}
+
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -224,6 +233,10 @@ fieldset {
   gap: 5px;
   cursor: pointer;
   width: fit-content;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -247,6 +260,11 @@ fieldset {
   background-color: #fff;
   opacity: 0;
   transition: opacity 0.2s;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
