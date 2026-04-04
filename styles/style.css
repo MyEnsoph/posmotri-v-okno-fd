@@ -63,6 +63,7 @@ fieldset {
 .content__details {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
   gap: 26px;
 }
@@ -137,13 +138,18 @@ fieldset {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+  font-size: 18px;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
 }
 
 .search-form__fieldset-title {
   font-size: 18px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0;
   margin-top: 1px;
 }
@@ -155,6 +161,7 @@ fieldset {
   font-weight: 700;
   line-height: 70px;
   text-transform: uppercase;
+  transform: translateY(2px);
 }
 
 .content__accent {
@@ -244,7 +251,9 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -255,14 +264,11 @@ fieldset {
 .search-form__pseudo-checkbox::after {
   content: "";
   display: block;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
   opacity: 0;
   transition: opacity 0.2s;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
