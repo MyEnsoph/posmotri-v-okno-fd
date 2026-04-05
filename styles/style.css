@@ -57,7 +57,8 @@ fieldset {
 .content__list-container {
   overflow-y: scroll;
   position: relative;
-  max-height: 298px;
+  height: 298px;
+  width: 399px;
 }
 
 .content__details {
@@ -182,6 +183,7 @@ fieldset {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 192px;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -324,8 +326,7 @@ fieldset {
 
 .more-button {
   inline-size: calc(100% - 4px);
-  width: 100%;
-  padding: 12px;
+  padding: 7px;
   margin-top: 30px;
 }
 
